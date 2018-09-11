@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Continental Food App</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./scn2.ico" />
+    <link rel="shortcut icon" type="image/png" href="./scn2.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	
+	<script>
+	<!-- pizza button -->
+	$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle();
+    });
+});
+<!-- side navigation menu -->
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+	</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top white-header">
+        <a class="navbar-brand" href="#"><img id="logo" src="scn2.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <button type="button" class="form-control mr-sm-2 remove-borders"><i class="fas fa-user-circle"></i>
+
+
+
+
+                    SIGN IN</a>
+                    <button type="button" class="form-control mr-sm-2 remove-borders"><i class="fas fa-shopping-cart"></i>
+
+                        CART</a>
+
+            </form>
+			
+			
+        </div>
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </nav>
+
+    <div class="header">
+        <!-- <img id="logo" src="scn2.jpg"> -->
+        <!-- <button type="button" class="btn">SIGN IN</a>
+            <button type="button" class="btn">CART</a> -->
+    </div>
+    <div class="header2">
+        <img src="scn1.jpg" id="logo2">
+    </div>
+    <div class="row delivery">
+        <div class="col-md-8">
+            <span class="text-left padding-top-1"><strong>DELIVERY LOCATION : </strong>521-B, Sushant Lok Phase 1,
+                Sector 27, Gurgram, Haryana
+                122009 </span>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn1"><i class="fas fa-map-marker-alt"></i>
+
+                Change Location</button>
+            <button type="button" class="btn2"><i class="far fa-compass"></i>
+
+
+
+
+
+                Detect Location </button>
+        </div>
+    </div>
+    <div class="container margin-top-122">
+        <div class="row padding-left-12">
+
+            <div class="col-md-3 text-justify">
+
+				<ul id="list"><strong>Appetizers</strong>
+				
+				<a href="#"><li>Pita</li></a>
+				<a href="#"><li>ApplePie</li></a>
+				<a href="#"><li>Nuttela</li></a>
+				<a href="#"><li>Bread</li></a>
+				<a href="#"><li>Shakes</li></a>
+				<a href="#"><li>Pita</li></a>
+				<a href="#"><li>Pita</li></a>
+				<a href="#"><li>Pita</li></a>
+				<a href="#"><li>Pita</li></a>
+				<a href="#"><li>Pita</li></a>
+				
+				</ul>
+				
+				
+              
+
+
+            </div>
+            <div class="col-md-5 text-justify">
+					<div class="imageText">
+				<img src="pizza1.jpg" height="150px" width="100%">
+				<div id="flip" class="bottom-left">Pizzas</div>
+				
+				<div id="panel">Chicken Pizza</br>
+				Mushroom Pizza
+				
+			
+				
+				</div>
+				
+				</div> </br>
+				<div id="imageText">
+				<img src="pizza1.jpg" height="150px" width="100%">
+				
+				</div> </br>
+				<div id="imageText">
+				<img src="pizza1.jpg" height="150px" width="100%">
+				
+				</div>
+                
+				</br>
+				<div id="imageText">
+				<img src="pizza1.jpg" height="150px" width="100%">
+				
+				</div>
+
+
+            </div>
+            <div class="col-md-4 margin-top-1">
+                <div class="card">
+                    <div class="card-header">
+                        Your orders
+                    </div>
+                    <div class="card-body height-plus-scroll">
+                        <div class="food-item-1">
+                            <div class="width-1"><img class="img-1" src="./pizza.jpg">Veggie Pita</div>
+                            <div class="width-3">12.95 $</div>
+                            <div class="width-2"><span class="box-1"><i class="fas fa-plus"></i>1<i class="fas fa-minus"></i></span></div>
+
+                        </div>
+                        <div class="food-item-1">
+                            <div class="width-1"><img class="img-1" src="./pizza.jpg">Chicken</div>
+                            <div class="width-3">8.05 $</div>
+                            <div class="width-2"><span class="box-1"><i class="fas fa-plus"></i>1<i class="fas fa-minus"></i></span></div>
+
+                        </div>
+                        <div class="food-item-1">
+
+                            <div class="width-1"><img class="img-1" src="./pizza.jpg">Veggie Laffa</div>
+                            <div class="width-3">14.95 $</div>
+                            <div class="width-2"><span class="box-1"><i class="fas fa-plus"></i>1<i class="fas fa-minus"></i></span></div>
+
+                        </div>
+                        <div class="food-item-1">
+
+                            <div class="width-1"><img class="img-1" src="./pizza.jpg">Veggie Laffa</div>
+                            <div class="width-3">14.95 $</div>
+                            <div class="width-2"><span class="box-1"><i class="fas fa-plus"></i>1<i class="fas fa-minus"></i></span></div>
+
+                        </div>
+                        <div class="food-item-1">
+
+                            <div class="width-1"><img class="img-1" src="./pizza.jpg">Veggie Laffa</div>
+                            <div class="width-3">14.95 $</div>
+                            <div class="width-2"><span class="box-1"><i class="fas fa-plus"></i>1<i class="fas fa-minus"></i></span></div>
+
+                        </div>
+                        <div class="spc-instr">
+                            Any Special Instruction
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div>
+                        <div class="spc-instr label-special text-left">
+                            <div class="width-4">ORDER TOTAL</div>
+                            <div class="width-2 total-1">19$</div>
+                        </div>
+                        <div class="btn-special text-center">
+                            <button type="button" class="btn btn-danger text-center btn-checkout">CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+  
+  <div class="footer">
+  <p>Powered By App2Food</p>
+</div>
+
+
+</body>
+
+</html>
